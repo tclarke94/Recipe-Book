@@ -1,0 +1,101 @@
+[
+    { 
+        
+        "name": "Jalapeno Cole Slaw",
+        "recipe": "1/3 cup lime juice, 1 tsp sugar, 3/4 tsp kosher salt, 1/2 cup thinly sliced red onion, 1/2 cup chopped cilantro, 2 thinly sliced jalapenos, 16 oz coleslaw mix",
+        "instructions": "Combine first 3 ingredients in large bowl. Add onion, cilantro, and coleslaw. Mix and add jalapenos. Toss well and chill for 1 hour",
+        "isSpicy": true,
+        "prepTime": "1 hour",
+        "servingSize": "8",
+        "img": "http://chaosinthekitchen.com/images/cilantroslaw.jpg"
+
+    },
+    {
+        
+        "name": "Fiery Chicken Tacos",
+        "recipe": "1 tsp sea salt, 1 tsp cumin, 1 tsp chili powder, 1 tsp paprika, 4 chicken thighs, 1 chipotle adobo, 1/4 cup chicken broth, 2 tbsp lime juice",
+        "instructions": "Combine spices and cover chicken. Place spice side down on hot cast iron with oil approx. 4 minutes. Flip chicken, lower heat and cover leaving a slight gap for air. Cook til 165 internal temp. Shred chicken then return to pan with adobo, lime and broth. Heat on low and stir for 5-8 minutes. ",
+        "isSpicy": true,
+        "prepTime": "30 minutes",
+        "servingSize": "4",
+        "img": "https://www.blessthismessplease.com/wp-content/uploads/2019/04/oven-baked-chicken-taco-meat-5-of-5.jpg"
+
+
+    },
+    {
+
+        "name": "Vodka Sauce Pasta",
+        "recipe": "1/2 cup vodka, tube tomato paste, basil, 10 cloves garlic, pepper flakes, heavy whippinbg cream, 1 onion, bag of pasta",
+        "instructions": "Chop onion and garlic, sautee in 3 tbsps of hot oil. Add pepper flakes and tomato paste until thickened. Add vodka cream basil and butter.",
+        "isSpicy": false,
+        "prepTime": "1 hour",
+        "servingSize": "6",
+        "img": "https://iamhomesteader.com/wp-content/uploads/2020/10/vodka-sauce-3.jpg"
+
+
+    },
+
+    {
+
+
+        "name": "Tikka Masala",
+        "recipe": "red onion, chili powder, salt, garlic, garam masala, ginger, tomatoes on the vine, crushed tomatoes, heavy cream, butter, oil, naan, rice, water",
+        "instructions": "Boil crushed tomatoes with cilantro stems in cloth. add chili powder, a cup of water, garam masala, ginger and garlic. let boil for 45 minutes, remove cloth- BLEND. In seperate pan saute diced onion, add chopped tomatoes, garlic, ginger, garam. Add two tbps of butter and blended tomatoes. Stir for 20 minutes add 1 1/2 cups of heavy cream, add proteion of choice.",
+        "isSpicy": false,
+        "prepTime": "2 hours",
+        "servingSize": "8",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-chicken-tikka-masala-jpg-1526059261.jpg"
+        
+
+
+
+    },
+    {
+
+        "name": "Chicken Noodle Soup",
+        "recipe": "64 0z chicken bone broth, egg noodles, rotisserie chicken, onions, 3 carrots, 3 celery stalks, olive oil, salt and pepper",
+        "instructions": "Chop veggies and shred chicken, saute veggies with oil and garlic. Immerse 2 cups of broth to mix. Add and saute chicken skin. Add all ingredients, turn off heat. Let cook until noodles are dense. ",
+        "isSpicy": false,
+        "prepTime": "2 hours",
+        "servingSize": "6",
+        "img": "https://www.shugarysweets.com/wp-content/uploads/2019/10/instant-pot-chicken-noodle-soup-2.jpg"
+    },
+
+    {
+
+        "name": "Tinga Poblanos",
+        "recipe": "Tinga Sauce, onion, garlic, poblano peppers, cheese, steak.",
+        "instructions": "Slice open and deseed poblano peppers. Cook steak until shreddable. In bowl mix beef, chopped onions, tinga sauce. Stuff bell pepper with mix and cheese of choice. Bake 1 hour at 425, add shredded cheese for last 5 minutes. ",
+        "isSpicy": true,
+        "prepTime": "1.5 hours",
+        "servingSize": "4",
+        "img": "https://static.diabetesfoodhub.org/system/thumbs/system/images/recipes/1654-diabetic-chicken-tinga-poblana_latin-comfort-foods_092618_1021x779_1_3885281428.jpg"
+
+    },
+    {
+
+        "name": "Roasted Bell Pepper Feta Dip",
+        "recipe": "Garlic, olive oil, sauteed onions, feta, red bell pepper, salt, pepper flakes",
+        "instructions": "Toss ingredients in blender until smooth",
+        "isSpicy": false,
+        "prepTime": "20 minutes",
+        "servingSize": "6",
+        "img": "https://www.justalittlebitofbacon.com/wp-content/uploads/2015/09/feta-and-red-pepper-dip-5.jpg"
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
