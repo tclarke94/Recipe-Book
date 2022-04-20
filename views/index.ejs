@@ -1,4 +1,21 @@
 <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
 
-<!-- <% stuff.forEach%> -->
-<h1><%=recipe%></h1>
+
+<h1>Recipe Book</h1>
+
+<% stuff.forEach(item => { %>
+
+    <div ><%=item.name %></div>
+    <img src="<%=item.img %>" height="200" />
+
+
+        <button id= 'button'>
+            <a  href="/<%=item.id%>">Recipe Details</a>
+
+        </button>
+        <!-- <a class='button submit font' href="/<%=item.id%>">edit</a> -->
+    <% }) %>
+
+    <div >
+        <a href="/add">Add</a>
+    </div>

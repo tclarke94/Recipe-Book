@@ -1,0 +1,19 @@
+
+<div>
+
+    <h1><%=stuff.name%></h1>
+    <img src = <%=stuff.img%> width="400" height="400">
+    <h2>RECIPE:<%=stuff.recipe%></h2>
+    <h2>INSTRUCTIONS:<%=stuff.instructions%></h2>
+    <h2>IS IT SPICY?:<%=stuff.isSpicy%></h2>
+    <h2>PREP TIME:<%=stuff.prepTime%></h2>
+    <h2>SERVING SIZE:<%=stuff.servingSize%></h2>
+    
+
+</div>
+
+<div>
+   
+<!-- <button id='button'><a href="/<%=stuff.id%>">Edit Recipe</a></button>  -->
+<a href="/<%=stuff.id%>/edit">Edit Recipe</a>
+</div>

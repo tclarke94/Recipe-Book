@@ -6,13 +6,27 @@ const router =  express.Router()
 
 
 //find all recipes
-router.get('/', (req,res)=> {
+router.get('/test', (req,res)=> {
     Recipe.find({})
     .then((items) => res.send(items))
 })
 
 
+//display recipe names, make them clickable to redirect to recipe details
+router.get('/', (req,res)=> {
+    Recipe.find({}).then((items)=>
+    res.render('index', {stuff: items}))
+})
+//above redirects here, has form to create new recipe model
+router.get('/add', (req,res)=> {
+    res.render('new')
+})
+
 //add a recipe
+// router.get('/add', (req,res)=> {
+//     res.render('new')
+// })
+//adds recipe
 router.post('/add', (req,res)=> {
     Recipe.create(req.body)
     .then(()=> res.redirect('/'))
@@ -20,19 +34,34 @@ router.post('/add', (req,res)=> {
 
 
 //delete a recipe
-router.delete('/:id', (req,res)=> {
-    Recipe.findByIdAndRemove({_id: req.params.id})
-    .then(res.redirect('/'))
-})
+// router.delete('/:id', (req,res)=> {
+//     Recipe.findByIdAndRemove({_id: req.params.id})
+//     .then(res.redirect('/'))
+// })
 
-//edit a recipe
+//this grabs an individual recipe and displays its body
+router.get('/:id', (req,res)=> {
+    Recipe.findById({_id: req.params.id})
+    .then(items => (res.render('display',{stuff: items})))
+   
+})
+//this should allow to edit recipe
 router.put('/:id', (req,res)=> {
-    Recipe.findOneAndUpdate({_id: req.params.id}, req.body)
-    .then(items => res.redirect('/'))
+    Recipe.findByIdAndUpdate({_id: req.params.id}, req.body)
+    .then(items => res.render('edit',{stuff: items}))
+
 })
 
+router.get('/:id/edit', (req,res)=> {
+    Recipe.findById({_id: req.params.id})
+    .then(items => res.render('edit',{stuff: items}))
+    // .then(items => res.redirect('index',{stuff: items}))
+})
 
+router.get('/:id/edit',(req,res)=>{
+   res.redirect('index')
 
+})
 
 
 

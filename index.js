@@ -6,6 +6,7 @@ const ejs= require('ejs')
 
 const app = express()
 app.use(express.static('public'))
+app.use(methodOverride('_method'))
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
