@@ -6,16 +6,17 @@ const router =  express.Router()
 
 
 //find all recipes
-router.get('/test', (req,res)=> {
-    Recipe.find({})
-    .then((items) => res.send(items))
-})
+// router.get('/test', (req,res)=> {
+//     Recipe.find({})
+//     .then((items) => res.send(items))
+// })
 
 
 //display recipe names, make them clickable to redirect to recipe details
 router.get('/', (req,res)=> {
     Recipe.find({}).then((items)=>
     res.render('index', {stuff: items}))
+    // res.json(items))
 })
 //above redirects here, has form to create new recipe model
 router.get('/add', (req,res)=> {
@@ -48,20 +49,29 @@ router.get('/:id', (req,res)=> {
 //this should allow to edit recipe
 router.put('/:id', (req,res)=> {
     Recipe.findByIdAndUpdate({_id: req.params.id}, req.body)
-    .then(items => res.render('edit',{stuff: items}))
-
+    .then(items => res.redirect('/'))
+    
 })
 
 router.get('/:id/edit', (req,res)=> {
     Recipe.findById({_id: req.params.id})
     .then(items => res.render('edit',{stuff: items}))
-    // .then(items => res.redirect('index',{stuff: items}))
+    // .finally(items => res.redirect('/:id'))
 })
 
-router.get('/:id/edit',(req,res)=>{
-   res.redirect('index')
-
+//delete route
+router.delete('/:id', (req,res)=> {
+    Recipe.findByIdAndRemove({_id: req.params.id})
+    .then(res.redirect('/'))
 })
+
+
+
+
+// router.get('/:id/edit',(req,res)=>{
+//    res.redirect('index')
+
+// })
 
 
 
