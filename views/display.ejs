@@ -3,11 +3,11 @@
 
     <h1><%=stuff.name%></h1>
     <img src = <%=stuff.img%> width="400" height="400">
-    <h2>RECIPE:<%=stuff.recipe%></h2>
-    <h2>INSTRUCTIONS:<%=stuff.instructions%></h2>
-    <h2>IS IT SPICY?:<%=stuff.isSpicy%></h2>
-    <h2>PREP TIME:<%=stuff.prepTime%></h2>
-    <h2>SERVING SIZE:<%=stuff.servingSize%></h2>
+    <h2>RECIPE: <%=stuff.recipe%></h2>
+    <h2>INSTRUCTIONS: <%=stuff.instructions%></h2>
+    <h2>IS IT SPICY?: <%=stuff.isSpicy%></h2>
+    <h2>PREP TIME: <%=stuff.prepTime%></h2>
+    <h2>SERVING SIZE: <%=stuff.servingSize%></h2>
     
 
 </div>
@@ -19,6 +19,8 @@
 
 <form action='/<%=stuff.id%>?_method=DELETE' method="POST">
     <input type='submit' value='DELETE RECIPE'/>
-
-    <input type='submit' value='Return to Recipe Book'
+</form>
+<a href="/">Return to Recipe Book
+</a>
+    
 </div>
