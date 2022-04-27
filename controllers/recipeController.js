@@ -5,40 +5,26 @@ const Recipe = require('../models/recipe-models')
 const router =  express.Router()
 
 
-//find all recipes
-// router.get('/test', (req,res)=> {
-//     Recipe.find({})
-//     .then((items) => res.send(items))
-// })
 
 
 //display recipe names, make them clickable to redirect to recipe details
 router.get('/', (req,res)=> {
     Recipe.find({}).then((items)=>
     res.render('index', {stuff: items}))
-    // res.json(items))
+  
 })
 //above redirects here, has form to create new recipe model
 router.get('/add', (req,res)=> {
     res.render('new')
 })
 
-//add a recipe
-// router.get('/add', (req,res)=> {
-//     res.render('new')
-// })
+
 //adds recipe
 router.post('/add', (req,res)=> {
     Recipe.create(req.body)
     .then(()=> res.redirect('/'))
 })
 
-
-//delete a recipe
-// router.delete('/:id', (req,res)=> {
-//     Recipe.findByIdAndRemove({_id: req.params.id})
-//     .then(res.redirect('/'))
-// })
 
 //this grabs an individual recipe and displays its body
 router.get('/:id', (req,res)=> {
@@ -68,10 +54,7 @@ router.delete('/:id', (req,res)=> {
 
 
 
-// router.get('/:id/edit',(req,res)=>{
-//    res.redirect('index')
 
-// })
 
 
 

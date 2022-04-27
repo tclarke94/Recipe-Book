@@ -1,4 +1,11 @@
+<head>  
+   <title>Recipe Book</title>
+</head>
+<body class='bg-info'>
+    <%- include('../partials/header.ejs') %>
+
 <h2> Edit this Recipe</h2>
+
 <form class="form" action="/<%=stuff.id%>?_method=PUT" method="POST">
 
 
@@ -18,6 +25,9 @@
         <label  for="img">Image:</label>
         <input  type='text' name='img' value='<%=stuff.img%>'/>
     </div>
-    <button >Edit recipe!</button>
-    <a href="/" style="text-decoration: none;">Return to Recipe Book</a>
+    <button class= 'btn btn-warning' style="text-decoration: none;">Edit recipe!</button>
+    <a href="/" class='btn btn-warning'style="text-decoration: none;">Return to Recipe Book</a>
 </form>
+<%- include('../partials/footer.ejs') %>
+
+</body>
