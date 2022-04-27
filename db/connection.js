@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
-const mongoURI ='mongodb+srv://test:test@cluster0.gc90c.mongodb.net/Recipe-Book?retryWrites=true&w=majority'
+const mongoURI =
+    process.env.NODE_ENV === 'production'
+    ? process.env.DB_URL
+    :'mongodb+srv://test:test@cluster0.gc90c.mongodb.net/Recipe-Book?retryWrites=true&w=majority'
 
 
 

@@ -42,7 +42,6 @@ router.put('/:id', (req,res)=> {
 router.get('/:id/edit', (req,res)=> {
     Recipe.findById({_id: req.params.id})
     .then(items => res.render('edit',{stuff: items}))
-    // .finally(items => res.redirect('/:id'))
 })
 
 //delete route

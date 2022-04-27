@@ -16,9 +16,7 @@ app.set('view engine', 'ejs')
 
 const PORT = process.env.PORT || 4000
 
-// app.get('/', (req,res)=> {
-//     res.send('hello')
-// })
+
 
 
 

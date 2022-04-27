@@ -1,16 +1,17 @@
 <head>
 <title>Recipe Book</title>
 </head>
+<div class = 'container'>
+    <div class='row'>
+        <div class='col'>
 <body class='bg-info'>
     <%- include('../partials/header.ejs') %>
 
 <h2 >Add a new recipe!</h2>
 
 <form class="form" action="/add" method="POST">
-<!-- 
-    <div class = 'container'>
-        <div class='row'>
-            <div class='col'> -->
+
+
     <div style="color:black;" >
         <label  for="name">Name:</label>
         <input  type='text' name='name'/>
@@ -28,12 +29,12 @@
         <input  type='text' name='img'/>
     </div>
 
-            <!-- </div>
-            </div>
-    </div> -->
 
     <button class= 'btn btn-warning' style="text-decoration: none;">Submit new recipe!</button>
     <a href="/" style="text-decoration: none;" class='btn btn-warning'>Return to Recipe Book</a>
+</div>
+</div>
+</div>
 
     <%- include('../partials/footer.ejs') %>
 

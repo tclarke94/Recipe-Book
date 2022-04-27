@@ -1,17 +1,22 @@
 <head>  
    <title>Recipe Book</title>
 </head>
+<div class = 'container '>
+    <div class='row-6'>
+        <div class='col'>
 <body class='bg-info'>
     <%- include('../partials/header.ejs') %>
 
 <h2> Edit this Recipe</h2>
 
+
 <form class="form" action="/<%=stuff.id%>?_method=PUT" method="POST">
 
 
     <div >
+        
         <label  for="name">Name:</label>
-        <input  type='text' name='name' value='<%=stuff.name%>' />
+        <input  type='text' name='name'  value='<%=stuff.name%>' />
         <label  for="recipe">Recipe:</label>
         <input  type='text' name='recipe' value='<%=stuff.recipe%>'/>
         <label  for="instructions">Instructions:</label>
@@ -24,10 +29,15 @@
         <input  type='text' name='servingSize' value='<%=stuff.servingSize%>'/>
         <label  for="img">Image:</label>
         <input  type='text' name='img' value='<%=stuff.img%>'/>
+    </span>
     </div>
     <button class= 'btn btn-warning' style="text-decoration: none;">Edit recipe!</button>
     <a href="/" class='btn btn-warning'style="text-decoration: none;">Return to Recipe Book</a>
 </form>
+</div>
+</div>
+</div>
+
 <%- include('../partials/footer.ejs') %>
 
 </body>
