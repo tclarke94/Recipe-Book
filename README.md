@@ -2,7 +2,7 @@
 
   Recipe Book is a simple digital recipe rolodex that consists of recipes from a collaborative cookbook my parnter and I share. It's a living document that inspires and envigorates, with the overall goal being to pass the recipes down to my daughter, Vera.
 
-  This project was made with ExpressJS, Mongoose, Node.JS, CSS, and a bit of Bootstrap. It has a Recipe model, is a RESTful app with full CRUD routes and adheres to the MVC file structure. 
+Technologies Used : HTML, EJS, CSS, JavaScript, Node.js, Mongoose, ExpressJS, Bootstrap
   
   Goals for the user were to produce a clean, simple and intuitive layout to interact with. To be able to create, add, edit, delete and view the recipes. To have redirect buttons so as to change pages without having to edit or add a recipe.
 
